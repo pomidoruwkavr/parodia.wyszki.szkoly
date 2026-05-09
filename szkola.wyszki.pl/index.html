@@ -1,0 +1,1571 @@
+<!--?xml version="1.0" encoding="utf-8"?--><!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl-pl" lang="pl-pl"><head>
+	<meta name="designer" content="Juergen Koller - http://www.lernvid.com">
+<meta name="licence" content="Creative Commons 3.0">
+<link href="templates/allrounder-3/favicon.ico" rel="shortcut icon" type="image/x-icon">
+
+
+<!--- ADD CSS Files -->
+
+
+
+	<link href="templates/allrounder-3/css/template.css" rel="stylesheet" type="text/css" media="all">
+<!--
+	<link href="/templates/allrounder-3/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+-->
+	<link href="templates/allrounder-3/css/joomla.css" rel="stylesheet" type="text/css" media="all">
+	<link href="templates/allrounder-3/css/colors.css" rel="stylesheet" type="text/css" media="all">
+	<link href="templates/allrounder-3/css/lvdropdown.css" rel="stylesheet" type="text/css" media="all">
+	<link href="templates/allrounder-3/css/typo.css" rel="stylesheet" type="text/css" media="all">
+	<link href="templates/allrounder-3/css/modules.css" rel="stylesheet" type="text/css" media="all">
+	
+<!--- Older Browser CSS -->
+<!--[if IE 7]>
+	<link href="/templates/allrounder-3/css/ie7.css" rel="stylesheet" type="text/css" media="all" />
+<![endif]-->
+
+<!--- ADD JavaScript Files -->
+
+	<script type="text/javascript" src="templates/allrounder-3/js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript">
+		var jq = jQuery.noConflict();
+	</script>
+	<script type="text/javascript" src="templates/allrounder-3/js/lv-dropdown.js"></script>
+	<script type="text/javascript" src="templates/allrounder-3/js/jq.easy-tooltip.min.js"></script>
+	<script type="text/javascript" src="templates/allrounder-3/js/jq.easy-caption.min.js"></script>
+	<script type="text/javascript" src="templates/allrounder-3/js/reflection.js"></script>
+	<script type="text/javascript" src="templates/allrounder-3/js/effects.js"></script>
+
+
+<!-- Layout parameters -->
+	<style type="text/css">
+
+	/* Template layout parameters */
+	
+
+	#wrapper {
+		margin-top:10px;
+	}
+	#foot_container {
+		margin-bottom:0px;
+	}
+	#topmenu ul.menu, #topmenu ul.menu li a, #topmenu ul.menu li span.separator {
+		background-image: url('templates/allrounder-3/images/dropdown-aero.png');
+	}
+	#topmenu ul.menu li.parent a, #topmenu ul.menu li.parent span.separator {
+		background-image: url('templates/allrounder-3/images/menu-parent-aero.png');
+	}
+	#topmenu ul.menu li.parent a:hover, #topmenu ul.menu li.parent span.separator:hover, 
+	#topmenu ul.menu li#current.parent a, #topmenu ul.menu li#current.parent span.separator {
+		background-image: url('templates/allrounder-3/images/menu-parent-hover-aero.png');
+	}
+			.page-header h2, h2.item-title {
+			background-image: url('index.html');
+		}
+			
+</style>
+<!-- Define fonts -->
+	<style type="text/css">
+
+	/* Template fonts */
+	
+	body {
+		font-size:13px;
+
+							font-family:Georgia;
+				line-height:1.3em;
+	}
+
+</style>
+<!-- ADD own template colors -->
+	<style type="text/css">
+
+	/* Template colors */
+
+	body {
+		background-color: #A2CDFD;
+		color: #555555;
+	}
+	span#copy a {
+		color: #555555;
+	}
+	a, a:link, a:visited, a:active, a:focus {
+		color: #A52A2A;
+	}
+
+	#wrapper, #foot_container {
+		background-color: #EFEFEF;
+		border: 1px solid #FFFFFF;
+	}
+
+	
+	#header {
+		background-color: #383838;
+		border-top:1px solid #0A0A0A;
+		border-left:1px solid #0A0A0A;	
+		border-right:1px solid #0A0A0A;	
+	}
+	.heckl, .heckr {  
+		border-top: 10px solid #2E2840;
+	}
+
+	#footer {
+		background-color: #222222;
+		border:1px solid #444444;
+		border-bottom:2px solid #444444;
+	}
+	.feckl, .feckr {  
+		border-bottom: 10px solid #222222;
+	}
+	#footer a#gotop {
+		color: #FFFFFF;
+	}
+	#footermodule1234, #footermodule1234 a, #footermodule1234 ul.menu, #footermodule5, #footermodule5 a {
+		color: #5B6C71;
+	}
+	#subfoot {
+		background-color: #313131;
+		border-top:1px solid #FFFFFF;
+		border-bottom:1px solid #222222;
+	}
+	.copytext {
+		color: #5B6C71;
+	}
+
+	#maincontent {
+		background-color: #F9F9F9;
+		border: 3px double #E9E9E9;
+	}
+	
+	.item-page, .item, .leading-0, .leading-1, .leading-2, .leading-3, .leading-4, .leading-5, .contact {
+		background-color:#FFFFFF;
+		border: 1px solid #E9E9E9;
+	}
+
+	.page-header h2, .page-header h2 a {
+		color: #484848 !important;
+	}
+	div.item-separator {
+		border-bottom:3px double #EEEEEE !important;
+	}
+
+	#wrapper #leftcol h3.moduleh3, #wrapper #rightcol h3.moduleh3	 {
+		background-color: #383838;
+		border-top:	1px solid #555555;
+		color: #DDDDDD;
+	}
+	#wrapper #leftcol h3.moduleh3	 {
+		border-left: 1px solid #999999;
+		border-right: 1px solid #555555;
+	}
+	#wrapper #rightcol h3.moduleh3	 {
+		border-right: 1px solid #999999;
+		border-left: 1px solid #555555;
+	}
+	.h3eckl, .h3eckr {  
+		border-top: 10px solid #222222;
+	}
+
+	#leftcol .module div.lvround-inner, #leftcol .module_menu div.lvround-inner, #leftcol .module_text div.lvround-inner, 
+	#rightcol .module div.lvround-inner, #rightcol .module_menu div.lvround-inner, #rightcol .module_text div.lvround-inner {
+		background-color: #F9F9F9;
+		border: 1px solid #DDDDDD;
+		color: #505050;
+	}
+	#subhead {
+		background-color: #F9F9F9;
+		border: 1px solid #FFFFFF;
+	}
+	.breadcrumbs, .breadcrumbs span {
+		color: #555555;
+	}
+	#leftcol .module div div, #leftcol .module_menu div div, #leftcol .module_text div div, 
+	#rightcol .module div div, #rightcol .module_menu div div, #rightcol .module_text div div {
+		border: 1px solid #FFFFFF;
+	}
+
+	/**** Global Modules ****/
+
+	div.module {
+		color:#505050;
+		background-color:#FFFFFF;
+		border:1px solid #DDDDDD;
+	}
+	div.module h3.moduleh3 {
+		background-color:#EFEFEF;
+		border:1px solid #DDDDDD;
+	}
+
+
+	.input, .inputbox {
+		color: #555555;
+		background-color: #EFEFEF;
+		border-top: 1px solid #CCCCCC;
+		border-left: 1px solid #CCCCCC;
+		border-right: 1px solid #FFFFFF;
+		border-bottom: 1px solid #FFFFFF;
+	}
+	.input:hover, .inputbox:hover {
+		color: #555555;
+		background-color: #F9F9F9;
+	}
+
+	input.button, button.button, button.validate, .pagenav, ul.pagenav li a {
+		color: #555;
+		background-color: #efefef;
+		color: #555555;
+		background-color: #EFEFEF;
+		border-top: 1px solid #CCCCCC;
+		border-left: 1px solid #CCCCCC;
+		border-right: 1px solid #FFFFFF;
+		border-bottom: 1px solid #FFFFFF;
+	}
+	input.button:hover, button.button:hover, button.validate:hover, .pagenav, ul.pagenav li a:hover {
+		color: #000000;
+		background-color: #FFFFFF;
+	}
+
+	/**** Mainmenu with suffix: _menu ****/
+	
+	.module_menu ul.menu li a, .module_menu ul.menu li span.separator {
+		color: #333333;
+		border-bottom:1px dotted #CCCCCC;
+	}
+	.module_menu ul.menu li a:hover, .module_menu ul.menu li a:active, .module_menu ul.menu li a:focus {
+		color: #14B52F!important;
+	}
+	.module_menu ul.menu li.current a {
+		color: #5E5E5E;
+	}
+	.module_menu ul.menu li.current ul li a {
+		color: #150E54;
+	}
+
+	/**** Default Tooltips ****/
+
+	.easy-tooltip-default {
+		border: 1px solid #A6A7AB; 
+		background-color: #F2F3F5; 
+		color: #800000;
+	}
+
+
+</style>
+<!-- ADD own dropdown-menu colors -->
+	<style type="text/css">
+
+	/* Dropdown menu colors */
+
+	#topmenu ul.menu {
+		background-color:#222222 !important;
+		border-top:3px double #FFFFFF !important;
+		border-bottom:3px double #FFFFFF !important;
+	}
+	#topmenu ul.menu li {
+		border-right:1px solid #555555 !important;
+	}
+	#topmenu ul.menu li a, #topmenu ul.menu li span.separator {
+		border-top:1px solid #000000 !important;
+		border-right:1px solid #222222 !important;
+		border-left:1px solid #000000 !important;
+		border-bottom:1px solid #333333 !important;
+		color:#CCCCCC;
+		background-color:#222222;
+	}
+	#topmenu ul.menu a:hover {
+		color:#FFFFFF;
+	}
+	
+	/** LEVEL 2 **/
+	#topmenu ul.menu ul {
+		border:2px solid #000000 !important;
+		background-color:#222222;
+	}
+	#topmenu ul.menu li ul li a, #topmenu ul.menu li ul li span.separator {
+		border-top:1px solid #000000 !important;
+		border-right:1px solid #333333 !important;
+		border-left:1px solid #333333 !important;
+		border-bottom:1px solid #333333 !important;
+		color:#999999;
+	}
+	#topmenu ul.menu li ul li a:hover {
+		color:#FFFFFF;
+	}
+	#topmenu ul.menu li li {
+		background-color:#171717;
+	}
+	#topmenu ul.menu li li:hover {
+		background-color:#212121;
+	}
+
+</style>
+
+
+
+
+<!-- math the width of the 3 columns -->
+<style type="text/css">
+	#leftcol {width: 20%;}
+	#rightcol {width: 20%;}
+	#content_outmiddle {width: 58%;}
+	#content_outright {width: 79%;}
+	#content_outleft {width: 79%;}
+</style>
+
+	  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="keywords" content="szkoła wyszki, szkoła podstawowa w Wyszkach">
+  <meta name="rights" content="Szkoła Podstawowa im. Jana Pawła II w Wyszkach">
+  <meta name="description" content="Szkoła Podstawowa w Wyszkach – Oficjalna Strona">
+  <meta name="generator" content="Joomla! - Open Source Content Management">
+  <title>Szkoła Podstawowa im. Jana Pawła II w Wyszkach - ZS Wyszki</title>
+  <link href="/?format=feed&type=rss" rel="alternate" type="application/rss+xml" title="RSS 2.0">
+  <link href="/?format=feed&type=atom" rel="alternate" type="application/atom+xml" title="Atom 1.0">
+  <link href="templates/allrounder-3/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+  <link href="https://szkola.wyszki.pl/component/search/?format=opensearch" rel="search" title="Szukaj Szkoła Podstawowa im. Jana Pawła II w Wyszkach" type="application/opensearchdescription+xml">
+  <link rel="stylesheet" href="plugins/system/jqueryintegrator/jqueryintegrator/ui-lightness/jquery-ui-1.8.6.custom.css" type="text/css">
+  <link rel="stylesheet" href="media/system/css/modal.css" type="text/css">
+  <link rel="stylesheet" href="components/com_imageshow/assets/css/style.css" type="text/css">
+  <link rel="stylesheet" href="media/plg_system_info_ciacho/css/style.css" type="text/css">
+  <script src="plugins/system/jqueryintegrator/jqueryintegrator/jquery-1.6.2.min.js" type="text/javascript"></script>
+  <script src="../ajax.googleapis.com/ajax/libs/jqueryui/1.8.6/jquery-ui.min.js" type="text/javascript"></script>
+  <script src="plugins/system/jqueryintegrator/jqueryintegrator/jquery.tools.min.js" type="text/javascript"></script>
+  <script src="media/system/js/mootools-core.js" type="text/javascript"></script>
+  <script src="media/system/js/core.js" type="text/javascript"></script>
+  <script src="media/system/js/caption.js" type="text/javascript"></script>
+  <script src="media/system/js/modal.js" type="text/javascript"></script>
+  <script src="media/system/js/mootools-more.js" type="text/javascript"></script>
+  <script src="components/com_imageshow/assets/js/swfobject.js" type="text/javascript"></script>
+  <script src="components/com_imageshow/assets/js/jsn_is_extultils.js" type="text/javascript"></script>
+  <script src="components/com_imageshow/assets/js/jsn_is_imageshow.js" type="text/javascript"></script>
+  <script type="text/javascript">
+window.addEvent('load', function() {
+				new JCaption('img.caption');
+			});
+		window.addEvent('domready', function() {
+
+			SqueezeBox.initialize({});
+			SqueezeBox.assign($$('a.modal'), {
+				parse: 'rel'
+			});
+		});
+				window.addEvent('domready', function(){
+	    			JSNISImageShow.alternativeContent();	
+	    		});
+			
+              function info_cookie(){
+                 document.cookie = 'info_cookie=1';
+                 document.getElementById('panel_cookie').style.display='none';             
+              }
+              window.addEvent('load', function() {
+                var cookies = document.cookie.split(';');
+                if(!cookies.length)
+                  document.getElementById('panel_cookie').style.display='none'; 
+               });
+         
+  </script>
+
+</head>
+<body>
+			<div id="wrapper" style="max-width:1180px;">
+							
+		
+			<div id="header_container">
+				
+				<div id="header">
+											<div id="headermodule1">
+							<div class="bannergroup">
+
+	<div class="banneritem">
+																																														<img src="images/banners/baner_1.gif" alt="SP Wyszki">
+											<div class="clr"></div>
+	</div>
+
+</div>
+
+							<div class="clr"></div>
+						</div>
+								
+								
+					<div id="logo">
+																													</div>	
+								
+					<span class="heckl">�</span>
+					<span class="heckr">�</span>
+				</div>
+						
+				
+		
+								<div id="topmenu_container">
+					<div id="topmenu">
+			             
+<ul class="menu">
+<li class="item-464 active"><a href="/">Start</a></li><li class="item-280 deeper parent"><a href="/using-joomla.html">O szkole</a><ul><li class="item-496"><a href="/using-joomla/kadra.html">Kadra</a></li><li class="item-534"><a href="/using-joomla/historia-szkoly.html">Historia SP im. JP II</a></li><li class="item-567"><a href="/using-joomla/sala-papieska.html">Regionalna Sala Papieska</a></li><li class="item-568"><a href="/using-joomla/izba-pamieci-narodowej.html">Izba Pamięci Narodowej</a></li><li class="item-569"><a href="/using-joomla/kompleks-sportowy.html">Kompleks sportowy</a></li><li class="item-786"><a href="/using-joomla/hymn-szkoly.html">Hymn szkoły</a></li></ul></li><li class="item-478"><a href="/kontakt.html">Kontakt</a></li><li class="item-576 deeper parent"><a href="/prawo-szkolne.html">Prawo szkolne</a><ul><li class="item-498"><a href="http://www.szkola.wyszki.pl/images/dopobrania/Statut_SP_im.JPII_w_Wyszkach.pdf">Statut </a></li><li class="item-554"><a href="/images/dopobrania/szkolnyprogramwychowawczy.pdf">Szkolny Program Wychowawczo-profilaktyczny</a></li><li class="item-500"><a href="/prawo-szkolne/szkolne-regulaminy.html">Szkolne regulaminy</a></li><li class="item-552"><a href="/images/dopobrania/zfss2013_pdf/regulamin_zfss_zs_wyszki.pdf">Regulamin ZFŚS</a></li><li class="item-869"><a href="/prawo-szkolne/deklaracja-dostępności.html" target="_blank">Deklaracja Dostępności</a></li><li class="item-872"><a href="/images/dopobrania/2021/Raport_o_stanie_zapewnienia_dostepności_podmiotu_publicznego.pdf">Raport o stanie zapewnienia dostępności podmiotu publicznego</a></li><li class="item-877"><a href="/images/dopobrania/2024/Standardy-skompresowany.pdf">Standardy Ochrony Małoletnich</a></li><li class="item-881"><a href="/images/2024/do_pobrania/doradztwo-zawodowe.pdf">Wewnątrzszkolny system doradztwa zawodowego</a></li></ul></li><li class="item-207"><a href="/joomlaorg.html" target="_blank">Tygodniowy rozkład zajęć</a></li><li class="item-558"><a href="http://www.janpawel2.pl/jan-pawe-ii/zyciorys1" target="_blank">św. Jan Paweł II</a></li><li class="item-624 deeper parent"><a href="http://www.youtube.com/playlist?list=PL973B80E06DB0328B">Galerie szkolne</a><ul><li class="item-557"><a href="/galerie-szkolne/galeria-foto.html" target="_blank">Fotoalbumy</a></li><li class="item-623"><a href="/galerie-szkolne/filmoteka.html">Filmoteka</a></li><li class="item-754"><a href="/galerie-szkolne/plikownia.html">Plikownia</a></li></ul></li><li class="item-805"><a href="/school-english.html">School English</a></li><li class="item-838"><a href="https://www.facebook.com/Szko%C5%82a-Podstawowa-im-Jana-Paw%C5%82a-II-w-Wyszkach-116963225091967">Facebook SP im. JP II</a></li></ul>
+
+					</div>
+					<div class="clr"></div>
+				</div>
+							             ﻿<div class="imieniny"><span class="imieniny">Dzisiaj jest:</span> 9 Maja 2026 ���|���    <span class="imieniny">Imieniny obchodzą:</span> Grzegorz, Katarzyna, Karolina
+</div>
+				<div class="clr"></div>
+					</div>
+					<div id="subhead">
+													<div id="search">
+			             <form action="/" method="post">
+	<div class="search">
+		<label for="mod-search-searchword">Szukaj</label><input name="searchword" id="mod-search-searchword" maxlength="20" class="inputbox" type="text" size="20" value="Szukaj..." onblur="if (this.value=='') this.value='Szukaj...';" onfocus="if (this.value=='Szukaj...') this.value='';"><input type="image" value="Szukaj" class="button" src="templates/allrounder-3/images/searchButton.gif" onclick="this.form.searchword.focus();">	<input type="hidden" name="task" value="search">
+	<input type="hidden" name="option" value="com_search">
+	<input type="hidden" name="Itemid" value="437">
+	</div>
+</form>
+
+					</div>
+							</div>
+				<div id="container">
+							<div id="slider">
+					
+<div class="breadcrumbs">
+<span class="showHere">Jesteś tutaj: </span><span>START</span></div>
+
+				</div>
+				<div class="clr"></div>
+							<div id="top123">
+							<div id="top1">
+		           	<div class="module-outer">
+		<div class="module">
+			<div>
+				<div>
+					<div class="lvround-inner">
+													<h3 class="moduleh3"><strong>Dziennik elektroniczny</strong></h3>
+												
+<ul class="menu">
+<li class="item-797"><a href="https://login.prymus.net/login" target="_blank">eDziennik - dziennik elektroniczny PPE</a></li></ul>
+						<div class="clr"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="clr"></div>
+		<span class="shadow-left">�</span>
+		<span class="shadow-right">�</span>
+	</div>
+		<div class="module-outer">
+		<div class="module">
+			<div>
+				<div>
+					<div class="lvround-inner">
+													<h3 class="moduleh3"><strong>Cyberbezpieczeństwo</strong></h3>
+												
+<ul class="menu">
+<li class="item-874"><a href="/bezpieczeństwo-w-sieci.html">CYBERBEZPIECZEŃSTWO</a></li></ul>
+						<div class="clr"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="clr"></div>
+		<span class="shadow-left">�</span>
+		<span class="shadow-right">�</span>
+	</div>
+		<div class="module-outer">
+		<div class="module">
+			<div>
+				<div>
+					<div class="lvround-inner">
+													<h3 class="moduleh3"><strong>OCHRONA DANYCH OSOBOWYCH</strong></h3>
+												
+<ul class="menu">
+<li class="item-820"><a href="/ochrona-danych-osobowych.html">INSPEKTOR</a></li><li class="item-821"><a href="/obowiazek-informacyjny.html">OBOWIĄZEK INFORMACYJNY</a></li><li class="item-873"><a href="/obowiązek-informacyjny-świetlica.html">OBOWIĄZEK INFORMACYJNY - ŚWIETLICA</a></li><li class="item-832"><a href="/monitoring.html">MONITORING</a></li></ul>
+						<div class="clr"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="clr"></div>
+		<span class="shadow-left">�</span>
+		<span class="shadow-right">�</span>
+	</div>
+		<div class="module-outer">
+		<div class="module">
+			<div>
+				<div>
+					<div class="lvround-inner">
+													<h3 class="moduleh3"><strong>SPRAWOZDANIE FINANSOWE</strong></h3>
+												
+<ul class="menu">
+<li class="item-833"><a href="/sprawozdanie-finansowe-szkoły.html">SPRAWOZDANIE FINANSOWE SZKOŁY</a></li></ul>
+						<div class="clr"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="clr"></div>
+		<span class="shadow-left">�</span>
+		<span class="shadow-right">�</span>
+	</div>
+		<div class="module-outer">
+		<div class="module">
+			<div>
+				<div>
+					<div class="lvround-inner">
+													<h3 class="moduleh3"><strong>OGŁOSZENIA</strong></h3>
+												
+<ul class="menu">
+<li class="item-835"><a href="/ogłoszenie.html">ZAPYTANIE</a></li></ul>
+						<div class="clr"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="clr"></div>
+		<span class="shadow-left">�</span>
+		<span class="shadow-right">�</span>
+	</div>
+	
+				</div>
+						
+							<div id="top2">
+		           	<div class="module-outer">
+		<div class="module">
+			<div>
+				<div>
+					<div class="lvround-inner">
+													<h3 class="moduleh3"><strong>Artykuły - najnowsze</strong></h3>
+												<ul class="latestnews">
+	<li>
+		<a href="/9-uncategorised/1507-obiady-maj-2026r.html">
+			Obiady - maj 2026r.</a>
+	</li>
+	<li>
+		<a href="/9-uncategorised/1506-obiady-kwiecień-2026r.html">
+			Obiady - kwiecień 2026r.</a>
+	</li>
+	<li>
+		<a href="/9-uncategorised/1505-obiady-marzec-2026r.html">
+			Obiady - marzec 2026r.</a>
+	</li>
+	<li>
+		<a href="/9-uncategorised/1504-rozkład-jazdy-autokarów-ii-półrocze-2025-2026.html">
+			Rozkład jazdy autokarów II półrocze 2025/2026 </a>
+	</li>
+	<li>
+		<a href="/9-uncategorised/1502-obiady-luty-2026r.html">
+			Obiady - luty 2026r.</a>
+	</li>
+	<li>
+		<a href="/edukacja.html">
+			Prezentacja projektu</a>
+	</li>
+	<li>
+		<a href="/projekty-europejskie.html">
+			Zagraniczna mobilność edukacyjna uczniów i kadry edukacji szkolnej</a>
+	</li>
+	<li>
+		<a href="/9-uncategorised/1499-obiady-styczeń-2026r.html">
+			OBIADY - styczeń 2026r.</a>
+	</li>
+	<li>
+		<a href="/9-uncategorised/1498-święto-szkoły.html">
+			Święto Szkoły</a>
+	</li>
+	<li>
+		<a href="/9-uncategorised/1497-obiady-grudzień-2025r.html">
+			Obiady - grudzień 2025r.</a>
+	</li>
+	<li>
+		<a href="/9-uncategorised/1496-obiady-listopad-2025r.html">
+			Obiady - listopad 2025r.</a>
+	</li>
+	<li>
+		<a href="/9-uncategorised/1495-opłata-za-obiady-za-październik-2025.html">
+			Opłata za obiady za październik 2025 </a>
+	</li>
+	<li>
+		<a href="/9-uncategorised/1494-obiady-wrzesień-2025.html">
+			OBIADY - wrzesień 2025</a>
+	</li>
+	<li>
+		<a href="/9-uncategorised/1493-wyprawka-szkolna-do-klasy-i-2025-2026.html">
+			Wyprawka do klasy pierwszej na rok szkolny 2025/2026</a>
+	</li>
+	<li>
+		<a href="/homepage/1491-wyprawki-szkolne-przedszkolaków.html">
+			WYPRAWKI SZKOLNE ODZIAŁÓW PRZEDSZKOLNYCH - 2025/2026</a>
+	</li>
+</ul>
+						<div class="clr"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="clr"></div>
+		<span class="shadow-left">�</span>
+		<span class="shadow-right">�</span>
+	</div>
+		<div class="module-outer">
+		<div class="module">
+			<div>
+				<div>
+					<div class="lvround-inner">
+													<h3 class="moduleh3"><strong>PROJEKTY EUROPEJSKIE</strong></h3>
+												
+<ul class="menu">
+<li class="item-885"><a href="/projekty-europejskie.html">Zagraniczna mobilność edukacyjna uczniów i kadry edukacji szkolnej</a></li><li class="item-886"><a href="/edukacja.html">Prezentacja projektu</a></li></ul>
+						<div class="clr"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="clr"></div>
+		<span class="shadow-left">�</span>
+		<span class="shadow-right">�</span>
+	</div>
+	
+				</div>
+						
+							<div id="top3">
+		           	<div class="module-outer">
+		<div class="module">
+			<div>
+				<div>
+					<div class="lvround-inner">
+													<h3 class="moduleh3"><strong>ERASMUS +</strong></h3>
+												
+<ul class="menu">
+<li class="item-875"><a href="/erasmus.html">ERASMUS +</a></li></ul>
+						<div class="clr"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="clr"></div>
+		<span class="shadow-left">�</span>
+		<span class="shadow-right">�</span>
+	</div>
+		<div class="module-outer">
+		<div class="module">
+			<div>
+				<div>
+					<div class="lvround-inner">
+													<h3 class="moduleh3"><strong>AKTYWNA SZKOŁA</strong></h3>
+												<div class="bannergroup">
+
+	<div class="banneritem">
+																																														<img src="images/banners/AS_2025.jpg" alt="Aktywna Szkoła" width="340" height="117">
+											<div class="clr"></div>
+	</div>
+
+</div>
+						<div class="clr"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="clr"></div>
+		<span class="shadow-left">�</span>
+		<span class="shadow-right">�</span>
+	</div>
+		<div class="module-outer">
+		<div class="module">
+			<div>
+				<div>
+					<div class="lvround-inner">
+													<h3 class="moduleh3"><strong>MALI INTELEKTUALIŚCI</strong></h3>
+												
+<ul class="menu">
+<li class="item-884"><span class="separator"><img src="images/2025/logo_projektu_1.jpg" alt="."><span class="image-title">.</span> </span>
+</li><li class="item-883"><a href="/mali-intelektualiści.html">MALI INTELEKTUALIŚCI Z GMINY WYSZKI</a></li></ul>
+						<div class="clr"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="clr"></div>
+		<span class="shadow-left">�</span>
+		<span class="shadow-right">�</span>
+	</div>
+	
+				</div>
+						
+	</div>					
+	
+		
+							<div id="leftcol">
+		             	<div class="module-outer_menu">
+					<h3 class="moduleh3"><strong>Dla nauczycieli</strong>
+				<span class="h3eckl">�</span>
+			</h3>
+				<div class="module_menu">
+			<div>
+				<div>
+					<div class="lvround-inner">
+						
+<ul class="menu">
+<li class="item-540"><a href="/zaloguj.html">Zaloguj/wyloguj</a></li><li class="item-855"><a href="https://login.poczta.home.pl">Logowanie poczta home.pl</a></li><li class="item-559"><a class="lv-tooltip" href="/2011-12-16-08-00-56.html">Procedury oceny pracy nauczycieli</a></li><li class="item-535"><a href="/dokumenty-szkolne-do-pobrania-i-edycji.html">Dokumenty szkolne do pobrania i edycji</a></li><li class="item-537 deeper parent"><a href="/dzielac-sie-wiedza-o-doswiadczeniem-bank-scenariuszy.html">Dzieląc się wiedzą i doświadczeniem - bank scenariuszy i dorobku nauczycieli</a><ul><li class="item-818"><a href="/dzielac-sie-wiedza-o-doswiadczeniem-bank-scenariuszy/przyklady-dobrych-praktyk-i-innowacji-w-nauczaniu.html">Przykłady dobrych praktyk i innowacji w nauczaniu</a></li><li class="item-785"><a href="/dzielac-sie-wiedza-o-doswiadczeniem-bank-scenariuszy/konspekty-i-scenariusze-z-technikami-uczenia.html">Konspekty i scenariusze z technikami uczenia</a></li><li class="item-787"><a href="/dzielac-sie-wiedza-o-doswiadczeniem-bank-scenariuszy/katalogi-metod-i-technik-uczenia.html">Katalogi metod i technik uczenia</a></li></ul></li><li class="item-570 deeper parent"><a href="/materialy-szkoleniowe.html">Materiały szkoleniowe</a><ul><li class="item-724"><a href="/materialy-szkoleniowe/wnioski-i-sprawozdania.html">Wnioski i sprawozdania</a></li><li class="item-730"><a href="/materialy-szkoleniowe/jak-analizowac-wyniki-egz-zew.html">Jak analizować wyniki egz. zew.</a></li></ul></li><li class="item-647"><a href="/bezpieczenstwo.html">Bezpieczeństwo</a></li></ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="clr"></div>
+		<span class="shadow-left">�</span>
+		<span class="shadow-right">�</span>
+	</div>
+		<div class="module-outer_menu">
+					<h3 class="moduleh3"><strong>Dla uczniów i rodziców</strong>
+				<span class="h3eckl">�</span>
+			</h3>
+				<div class="module_menu">
+			<div>
+				<div>
+					<div class="lvround-inner">
+						
+<ul class="menu">
+<li class="item-867"><a href="https://login.microsoftonline.com/">Logowanie - Office 365 dla szkół</a></li><li class="item-854"><a href="/rekrutacja-2021-2022.html">Rekrutacja 2025/2026</a></li><li class="item-510"><a href="/pedagog.html">Pedagog</a></li><li class="item-794"><a href="/logopeda.html">Logopeda</a></li><li class="item-574 deeper parent"><a href="/badz-bezpieczny-w-internecie.html">Bądź bezpieczny w Internecie</a><ul><li class="item-575"><a href="http://www.sieciaki.pl/">Sieciaki.pl - poznaj bezpieczny Internet</a></li></ul></li><li class="item-723"><a href="/gazetka-przedszkolakow.html">Gazetka przedszkolaków</a></li></ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="clr"></div>
+		<span class="shadow-left">�</span>
+		<span class="shadow-right">�</span>
+	</div>
+		<div class="module-outer_menu">
+					<h3 class="moduleh3"><strong>Organizacje szkolne</strong>
+				<span class="h3eckl">�</span>
+			</h3>
+				<div class="module_menu">
+			<div>
+				<div>
+					<div class="lvround-inner">
+						
+<ul class="menu">
+<li class="item-801"><a href="/szkolna-kasa-oszczednosci.html">Szkolna Kasa Oszczędności</a></li><li class="item-563 deeper parent"><a href="/mrg.html">Młodzieżowa Rada Gminy</a><ul><li class="item-621"><a href="/mrg/konkurs-wiedzy-o-samorzadzie-terytorialnym.html">Imprezy i konkursy MRG</a></li><li class="item-622"><a href="/mrg/dzialalnosc-mrg.html">Działalność MRG</a></li></ul></li><li class="item-564"><a href="http://wyszki.futbolowo.pl/index.php" target="_blank">UKS Iskra</a></li><li class="item-565"><a href="/samorzady-uczniowskie.html">Samorząd Uczniowski</a></li></ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="clr"></div>
+		<span class="shadow-left">�</span>
+		<span class="shadow-right">�</span>
+	</div>
+		<div class="module-outer_menu">
+					<h3 class="moduleh3"><strong>Biblioteka szkolna</strong>
+				<span class="h3eckl">�</span>
+			</h3>
+				<div class="module_menu">
+			<div>
+				<div>
+					<div class="lvround-inner">
+						
+<ul class="menu">
+<li class="item-503"><a href="/informacje-ogolne.html">Aktualności biblioteczne</a></li><li class="item-504"><a href="/o-bibliotece.html">O bibliotece</a></li><li class="item-505"><a href="/biblioteczne-regulaminy.html">Biblioteczne regulaminy</a></li><li class="item-506"><a href="/statystyki.html">Statystyki</a></li><li class="item-507"><a href="/imprezy-biblioteczne.html">Imprezy biblioteczne</a></li><li class="item-508 parent"><a href="/lektury.html">Lektury</a></li><li class="item-509"><a href="/konkursy-i-wystawki.html">Konkursy i wystawki</a></li></ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="clr"></div>
+		<span class="shadow-left">�</span>
+		<span class="shadow-right">�</span>
+	</div>
+		<div class="module-outer">
+					<h3 class="moduleh3"><strong>GIODO dzieciom</strong>
+				<span class="h3eckl">�</span>
+			</h3>
+				<div class="module">
+			<div>
+				<div>
+					<div class="lvround-inner">
+						<div class="bannergroup">
+
+	<div class="banneritem">
+																																																															<a href="/component/banners/click/28.html" target="_blank" title="GIODO dzieciom">
+							<img src="images/banners/logo_tdts2013.jpg" alt="GIODO dzieciom">
+						</a>
+																<div class="clr"></div>
+	</div>
+
+</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="clr"></div>
+		<span class="shadow-left">�</span>
+		<span class="shadow-right">�</span>
+	</div>
+		<div class="module-outer">
+					<h3 class="moduleh3"><strong>Wszyscy czytamy lektury</strong>
+				<span class="h3eckl">�</span>
+			</h3>
+				<div class="module">
+			<div>
+				<div>
+					<div class="lvround-inner">
+						<div class="bannergroup">
+
+	<div class="banneritem">
+										<p><span style="font-size: 10pt;"><strong><span style="font-family: 'Times New Roman',serif; color: black;"><a href="http://bookto.pl/katalog/darmowe"><img style="display: block; margin: 10px auto;" title="czytamy lektury" src="images/banners/logaspons/darmowe_lektury_3.jpg" alt="czytamy lektury" longdesc="czytamy lektury" width="218" height="105"></a>Ponad 300 darmowych lektur szkolnych z legalnych źródeł</span></strong><span style="font-family: 'Times New Roman',serif; color: black;"> z linkami do ściągnięcia oraz z krótką instrukcją, dla osób, które wcześniej nie korzystały z ebooków. Przy każdym e-booku, który można ściągnąć bezpłatnie jest słowo FREE.</span></span></p>				<div class="clr"></div>
+	</div>
+
+</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="clr"></div>
+		<span class="shadow-left">�</span>
+		<span class="shadow-right">�</span>
+	</div>
+		<div class="module-outer">
+					<h3 class="moduleh3"><strong>Pomocne w nauczaniu</strong>
+				<span class="h3eckl">�</span>
+			</h3>
+				<div class="module">
+			<div>
+				<div>
+					<div class="lvround-inner">
+						<div class="bannergroup">
+
+	<div class="banneritem">
+																																																															<a href="/component/banners/click/43.html" target="_blank" title="Podlaska Platforma Edukacyjna">
+							<img src="images/banners/PPE-%20logo.jpg" alt="Podlaska Platforma Edukacyjna" width="220">
+						</a>
+																<div class="clr"></div>
+	</div>
+	<div class="banneritem">
+																																																															<a href="/component/banners/click/40.html" target="_blank" title="ePodręczniki">
+							<img src="images/ep.jpg" alt="epodręczniki" width="220">
+						</a>
+																<div class="clr"></div>
+	</div>
+
+	<div class="bannerfooter">
+		E-podręczniki to całe środowisko uczenia się i nauczania. Dadzą możliwość pracy w zespołach i dopasują się do indywidualnego stylu nauki.	</div>
+</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="clr"></div>
+		<span class="shadow-left">�</span>
+		<span class="shadow-right">�</span>
+	</div>
+		<div class="module-outer">
+					<h3 class="moduleh3"><strong>Archiwum</strong>
+				<span class="h3eckl">�</span>
+			</h3>
+				<div class="module">
+			<div>
+				<div>
+					<div class="lvround-inner">
+							<ul class="archive-module">
+		<li>
+		<a href="/component/content/archive.html?year=2016&month=3">
+			marzec, 2016		</a>
+	</li>
+		<li>
+		<a href="/component/content/archive.html?year=2016&month=2">
+			luty, 2016		</a>
+	</li>
+		<li>
+		<a href="/component/content/archive.html?year=2016&month=1">
+			styczeń, 2016		</a>
+	</li>
+		<li>
+		<a href="/component/content/archive.html?year=2015&month=12">
+			grudzień, 2015		</a>
+	</li>
+		<li>
+		<a href="/component/content/archive.html?year=2014&month=10">
+			październik, 2014		</a>
+	</li>
+		<li>
+		<a href="/component/content/archive.html?year=2014&month=6">
+			czerwiec, 2014		</a>
+	</li>
+		<li>
+		<a href="/component/content/archive.html?year=2014&month=5">
+			maj, 2014		</a>
+	</li>
+		<li>
+		<a href="/component/content/archive.html?year=2014&month=4">
+			kwiecień, 2014		</a>
+	</li>
+		<li>
+		<a href="/component/content/archive.html?year=2014&month=2">
+			luty, 2014		</a>
+	</li>
+		<li>
+		<a href="/component/content/archive.html?year=2013&month=5">
+			maj, 2013		</a>
+	</li>
+	</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="clr"></div>
+		<span class="shadow-left">�</span>
+		<span class="shadow-right">�</span>
+	</div>
+	
+				</div>
+					
+		    <div id="content_outleft">
+					
+		
+				<div id="maincontent">
+					
+<div id="system-message-container">
+</div>						
+					<div class="blog-featured">
+
+<div class="items-leading">
+			<div class="leading-0">
+			
+	<h2>
+					<a href="/9-uncategorised/1507-obiady-maj-2026r.html">
+			Obiady - maj 2026r.</a>
+			</h2>
+
+	<ul class="actions">
+				<li class="print-icon">
+			<a href="/9-uncategorised/1507-obiady-maj-2026r.html?tmpl=component&print=1&page=" title="Drukuj" onclick="window.open(this.href,'win2','status=no,toolbar=no,scrollbars=yes,titlebar=no,menubar=no,resizable=yes,width=640,height=480,directories=no,location=no'); return false;" rel="nofollow"><img src="templates/allrounder-3/images/system/printButton.png" alt="Drukuj"></a>		</li>
+				
+			</ul>
+
+
+
+
+
+
+<p style="line-height: normal;"><strong><span style="font-size: 16pt;">Opłata za obiady za maj 2026 wynosi 144zł</span></strong><strong><span style="font-size: 12pt;">. (</span></strong><em><strong><span style="font-family: Georgia, serif; color: #555555; background: white;">opłatę pomniejszono o 9zł – 13.04.2026r. nie było obiadów)</span></strong></em></p>
+<p style="line-height: normal;"><em><strong><span style="font-size: 14pt; font-family: Calibri, sans-serif; color: black; background: white;">Rodzice uczniów klas VI-VIIII, którzy jadą do Grecji wpłacają 99zł. </span></strong></em></p>
+<p style="line-height: normal;"><strong><span style="font-size: 14pt;">Wpłaty za obiady prosimy dokonywać przelewem bankowym lub kartą� � � �w sekretariacie szkoły�<span style="color: red;">do 27.04.2026r. </span></span></strong></p>
+<p style="line-height: normal;"><strong><span style="font-size: 14pt;">Przypominamy, iż za datę wpłaty uznajemy wpływ środków pieniężnych na rachunek bankowy szkoły.</span></strong></p>
+<p style="margin-bottom: 0cm; line-height: 17.15pt; background: white;"><strong><span style="font-size: 14pt; color: black;">Dane do przelewu:</span></strong></p>
+<p style="margin-bottom: 0cm; line-height: 17.15pt; background: white;"><strong><span style="font-size: 14pt; color: black;">Szkoła Podstawowa im. Jana Pawła II w Wyszkach</span></strong></p>
+<p style="margin-bottom: 0cm; line-height: 17.15pt; background: white;"><strong><span style="font-size: 14pt; color: black;">ul. Szkolna 17, 17-132 Wyszki</span></strong></p>
+<p style="margin-bottom: 0cm; line-height: 17.15pt; background: white;"><strong><span style="font-size: 14pt; color: black;">Nr konta 84 80630001 0040 0400 1313 0002</span></strong></p>
+<p style="margin-bottom: 0cm; line-height: 17.15pt; background: white;"><span style="font-size: 14pt; color: black;">W tytule przelewu należy podać:�<strong>opłata za obiady na miesiąc………….,</strong>�<strong>nazwisko i imię dziecka, klasa</strong></span></p>
+
+
+<div class="item-separator"></div>
+		</div>
+			</div>
+	
+	
+			<div class="items-row cols-1 row-0">
+				<div class="item column-1">
+			
+	<h2>
+					<a href="/9-uncategorised/1506-obiady-kwiecień-2026r.html">
+			Obiady - kwiecień 2026r.</a>
+			</h2>
+
+	<ul class="actions">
+				<li class="print-icon">
+			<a href="/9-uncategorised/1506-obiady-kwiecień-2026r.html?tmpl=component&print=1&page=" title="Drukuj" onclick="window.open(this.href,'win2','status=no,toolbar=no,scrollbars=yes,titlebar=no,menubar=no,resizable=yes,width=640,height=480,directories=no,location=no'); return false;" rel="nofollow"><img src="templates/allrounder-3/images/system/printButton.png" alt="Drukuj"></a>		</li>
+				
+			</ul>
+
+
+
+
+
+
+<p style="line-height: normal;"><strong><span style="font-size: 16pt;">Opłata za obiady za kwiecień 2026 wynosi 162zł</span></strong><strong><span style="font-size: 12pt;">. <em></em></span></strong></p>
+<p style="line-height: normal;"><strong><span style="font-size: 14pt;">Wpłaty za obiady prosimy dokonywać przelewem bankowym lub kartą� � � � w sekretariacie szkoły�<span style="color: red;">do 27.03.2026r. </span></span></strong></p>
+<p style="line-height: normal;"><strong><span style="font-size: 14pt;">Przypominamy, iż za datę wpłaty uznajemy wpływ środków pieniężnych na rachunek bankowy szkoły.</span></strong></p>
+<p style="margin-bottom: 0cm; line-height: 17.15pt; background: white;"><strong><span style="font-size: 14pt; color: black;">Dane do przelewu:</span></strong></p>
+<p style="margin-bottom: 0cm; line-height: 17.15pt; background: white;"><strong><span style="font-size: 14pt; color: black;">Szkoła Podstawowa im. Jana Pawła II w Wyszkach</span></strong></p>
+<p style="margin-bottom: 0cm; line-height: 17.15pt; background: white;"><strong><span style="font-size: 14pt; color: black;">ul. Szkolna 17, 17-132 Wyszki</span></strong></p>
+<p style="margin-bottom: 0cm; line-height: 17.15pt; background: white;"><strong><span style="font-size: 14pt; color: black;">Nr konta 84 80630001 0040 0400 1313 0002</span></strong></p>
+<p style="margin-bottom: 0cm; line-height: 17.15pt; background: white;"><span style="font-size: 14pt; color: black;">W tytule przelewu należy podać:�<strong>opłata za obiady na miesiąc………….,</strong>�<strong>nazwisko i imię dziecka, klasa</strong></span></p>
+
+
+<div class="item-separator"></div>
+		</div>
+									<span class="row-separator"></span>
+				</div>
+
+				
+	
+			<div class="items-row cols-1 row-1">
+				<div class="item column-1">
+			
+	<h2>
+					<a href="/9-uncategorised/1505-obiady-marzec-2026r.html">
+			Obiady - marzec 2026r.</a>
+			</h2>
+
+	<ul class="actions">
+				<li class="print-icon">
+			<a href="/9-uncategorised/1505-obiady-marzec-2026r.html?tmpl=component&print=1&page=" title="Drukuj" onclick="window.open(this.href,'win2','status=no,toolbar=no,scrollbars=yes,titlebar=no,menubar=no,resizable=yes,width=640,height=480,directories=no,location=no'); return false;" rel="nofollow"><img src="templates/allrounder-3/images/system/printButton.png" alt="Drukuj"></a>		</li>
+				
+			</ul>
+
+
+
+
+
+
+<p style="line-height: normal;"><strong><span style="font-size: 14pt;">Od 1 marca obiady do szkoły będzie dostarczała firma CATERING U BRZOZY Marcin Brzeziński, ul. Adama Mickiewicza 53, lokal 6, 17-100 Bielsk Podlaski. �������������������������������Cena jednego obiadu wynosi 9zł. </span></strong></p>
+<p style="line-height: normal;"><strong><span style="font-size: 16pt;">Opłata za obiady za marzec 2026 wynosi 178,00zł</span></strong><strong><span style="font-size: 12pt;">. <em>(opłatę pomniejszono �����������������o dwa dni zawieszenie zajęć 02, 03.02.2026r – 20zł). </em></span></strong></p>
+<p style="line-height: normal;"><strong><span style="font-size: 14pt;">Wpłaty za obiady prosimy dokonywać przelewem bankowym lub kartą �����������������������w sekretariacie szkoły�<span style="color: red;">do 23.02.2026r. </span></span></strong></p>
+<p style="line-height: normal;"><strong><span style="font-size: 14pt;">Przypominamy, iż za datę wpłaty uznajemy wpływ środków pieniężnych na rachunek bankowy szkoły.</span></strong></p>
+<p style="margin-bottom: 0cm; line-height: 17.15pt; background: white;"><strong><span style="font-size: 14pt; color: black;">Dane do przelewu:</span></strong></p>
+<p style="margin-bottom: 0cm; line-height: 17.15pt; background: white;"><strong><span style="font-size: 14pt; color: black;">Szkoła Podstawowa im. Jana Pawła II w Wyszkach</span></strong></p>
+<p style="margin-bottom: 0cm; line-height: 17.15pt; background: white;"><strong><span style="font-size: 14pt; color: black;">ul. Szkolna 17, 17-132 Wyszki</span></strong></p>
+<p style="margin-bottom: 0cm; line-height: 17.15pt; background: white;"><strong><span style="font-size: 14pt; color: black;">Nr konta 84 80630001 0040 0400 1313 0002</span></strong></p>
+<p style="margin-bottom: 0cm; line-height: 17.15pt; background: white;"><span style="font-size: 14pt; color: black;">W tytule przelewu należy podać:�<strong>opłata za obiady na miesiąc………….,</strong>�<strong>nazwisko i imię dziecka, klasa</strong></span></p>
+
+
+<div class="item-separator"></div>
+		</div>
+									<span class="row-separator"></span>
+				</div>
+
+				
+	
+			<div class="items-row cols-1 row-2">
+				<div class="item column-1">
+			
+	<h2>
+					<a href="/9-uncategorised/1504-rozkład-jazdy-autokarów-ii-półrocze-2025-2026.html">
+			Rozkład jazdy autokarów II półrocze 2025/2026 </a>
+			</h2>
+
+	<ul class="actions">
+				<li class="print-icon">
+			<a href="/9-uncategorised/1504-rozkład-jazdy-autokarów-ii-półrocze-2025-2026.html?tmpl=component&print=1&page=" title="Drukuj" onclick="window.open(this.href,'win2','status=no,toolbar=no,scrollbars=yes,titlebar=no,menubar=no,resizable=yes,width=640,height=480,directories=no,location=no'); return false;" rel="nofollow"><img src="templates/allrounder-3/images/system/printButton.png" alt="Drukuj"></a>		</li>
+				
+			</ul>
+
+
+
+
+
+
+<div class="WordSection1">
+<p style="margin-top: 18.75pt; margin-right: 0cm; margin-bottom: 7.5pt; text-align: center; line-height: normal;"><strong style="font-size: 0.8em;"><span style="text-decoration: underline;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">DOWOZY - p. S. Krasowski</span></span></strong></p>
+</div>
+<div class="WordSection3">
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">Bagińskie – godz. 6:35 </span></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">Pierzchały – godz. 6:38</span></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">Kożuszki – godz. 6:44</span></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">Bujnowo – godz. 6:54 </span></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">Malesze – godz. 6:59</span></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">Szpaki – godz. 7:02</span></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">Kalinówka – godz. 7:07</span></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">Zakrzewo – godz. 7:12</span></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">Tworki – godz. 7:16</span></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">Niewino Borowe – godz. 7:20</span></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">Niewino Kamieńskie – godz. 7:23</span></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">Niewino Stare – godz. 7:26</span></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">Niewino Popławskie – godz. 7:29</span></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">Niewino Leśne – godz. 7:32</span></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">Sasiny – godz. 7:38</span></p>
+</div>
+<p><strong><span style="text-decoration: underline;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;"><br clear="all"> </span></span></strong></p>
+<div class="WordSection4">
+<p style="margin-bottom: 0cm; line-height: normal;"><strong><span style="text-decoration: underline;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">ODWOZY – p. S. Krasowski</span></span></strong></p>
+<table border="0" style="border-collapse: collapse; width: 463px;" cellspacing="0" cellpadding="0">
+<tbody>
+<tr style="height: 17.25pt;">
+<td rowspan="2" style="width: 98.75pt; border: 1.5pt solid windowtext; padding: 0cm 3.5pt; height: 17.25pt;" valign="top" width="132">�</td>
+<td colspan="2" style="width: 127.5pt; border-top: 1.5pt solid windowtext; border-right: 1.5pt solid windowtext; border-bottom: 1.5pt solid windowtext; border-left: none; padding: 0cm 3.5pt; height: 17.25pt;" valign="top" width="170"><strong><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">Poniedziałek/Wtorek/<br> Środa/Czwartek</span></strong></td>
+<td colspan="2" style="width: 121.05pt; border-top: 1.5pt solid windowtext; border-right: 1.5pt solid windowtext; border-bottom: 1.5pt solid windowtext; border-left: none; padding: 0cm; height: 17.25pt;" valign="top" width="161"><strong><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">Piątek</span></strong></td>
+</tr>
+<tr style="height: 26.1pt;">
+<td style="width: 64.3pt; border-top: none; border-left: none; border-bottom: 1.5pt solid windowtext; border-right: 1.5pt solid windowtext; padding: 0cm 3.5pt; height: 26.1pt;" valign="top" width="86"><strong><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">I kurs</span></strong></td>
+<td style="width: 63.2pt; border-top: none; border-left: none; border-bottom: 1.5pt solid windowtext; border-right: 1.5pt solid windowtext; padding: 0cm 3.5pt; height: 26.1pt;" valign="top" width="84"><strong><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">II kurs</span></strong></td>
+<td style="width: 64.35pt; border-top: none; border-left: none; border-bottom: 1.5pt solid windowtext; border-right: 1.5pt solid windowtext; padding: 0cm; height: 26.1pt;" valign="top" width="86"><strong><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">I kurs</span></strong></td>
+<td style="width: 2cm; border-top: none; border-left: none; border-bottom: 1.5pt solid windowtext; border-right: 1.5pt solid windowtext; padding: 0cm 3.5pt; height: 26.1pt;" valign="top" width="76"><strong><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">II kurs</span></strong></td>
+</tr>
+<tr style="height: 5.6pt;">
+<td style="width: 98.75pt; border-right: 1.5pt solid windowtext; border-bottom: 1.5pt solid windowtext; border-left: 1.5pt solid windowtext; border-top: none; padding: 0cm 3.5pt; height: 5.6pt;" valign="top" width="132">
+<p style="margin-bottom: 0cm; line-height: normal;"><strong><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">Wyszki</span></strong></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><strong><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">Łubice</span></strong></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><strong><span style="font-size: 12pt; font-family: 'Times New Roman', serif; background: lightgrey;">Bagińskie</span></strong></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><strong><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">Pierzchały</span></strong></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><strong><span style="font-size: 12pt; font-family: 'Times New Roman', serif; background: lightgrey;">Kożuszki</span></strong></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><strong><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">Malesze</span></strong></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><strong><span style="font-size: 12pt; font-family: 'Times New Roman', serif; background: lightgrey;">Szpaki</span></strong></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><strong><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">Kalinówka</span></strong></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><strong><span style="font-size: 12pt; font-family: 'Times New Roman', serif; background: lightgrey;">Zakrzewo</span></strong></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><strong><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">Tworki</span></strong></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><strong><span style="font-size: 12pt; font-family: 'Times New Roman', serif; background: lightgrey;">N. Borowe</span></strong></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><strong><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">N. Kamieńskie</span></strong></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><strong><span style="font-size: 12pt; font-family: 'Times New Roman', serif; background: lightgrey;">N. Stare</span></strong></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><strong><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">N. Popławskie</span></strong></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><strong><span style="font-size: 12pt; font-family: 'Times New Roman', serif; background: lightgrey;">N. Leśne</span></strong></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><strong><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">Sasiny</span></strong></p>
+</td>
+<td style="width: 64.3pt; border-top: none; border-left: none; border-bottom: 1.5pt solid windowtext; border-right: 1.5pt solid windowtext; padding: 0cm 3.5pt; height: 5.6pt;" valign="top" width="86">
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">12:40</span></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">12:45</span></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif; background: lightgrey;">12:52</span></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">12:55</span></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif; background: lightgrey;">13:01</span></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">13:05</span></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif; background: lightgrey;">13:08</span></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">13:13</span></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif; background: lightgrey;">13:18</span></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">13:22</span></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif; background: lightgrey;">13:26</span></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">13:29</span></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif; background: lightgrey;">13:32</span></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">13:35</span></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif; background: lightgrey;">13:38</span></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">13:44</span></p>
+</td>
+<td style="width: 63.2pt; border-top: none; border-left: none; border-bottom: 1.5pt solid windowtext; border-right: 1.5pt solid windowtext; padding: 0cm 3.5pt; height: 5.6pt;" valign="top" width="84">
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">15:20</span></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">15:25</span></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif; background: lightgrey;">15:32</span><span style="font-size: 12pt; font-family: 'Times New Roman', serif;"><br> 15:35<br> <span style="background: lightgrey;">15:41</span><br> 15:45</span></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif; background: lightgrey;">15:48</span></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">15:53</span></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif; background: lightgrey;">15:56</span></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">16:00</span></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif; background: lightgrey;">16:03</span></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">16:06</span></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif; background: lightgrey;">16:09</span></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">16:12</span></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif; background: lightgrey;">16:14</span></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">16:20</span></p>
+</td>
+<td style="width: 64.35pt; border-top: none; border-left: none; border-bottom: 1.5pt solid windowtext; border-right: 1.5pt solid windowtext; padding: 0cm; height: 5.6pt;" valign="top" width="86">
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">11:40</span></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">11:45</span></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif; background: lightgrey;">11:52</span></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">11:55</span></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif; background: lightgrey;">12:00</span></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">12:04</span></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif; background: lightgrey;">12:08</span></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">12:13</span></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif; background: lightgrey;">12:18</span></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">12:22</span></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif; background: lightgrey;">12:25</span></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">12:28</span></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif; background: lightgrey;">12:31</span></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">12:34</span></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif; background: lightgrey;">12:34</span></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">12:40</span></p>
+</td>
+<td style="width: 2cm; border-top: none; border-left: none; border-bottom: 1.5pt solid windowtext; border-right: 1.5pt solid windowtext; padding: 0cm 3.5pt; height: 5.6pt;" valign="top" width="76">
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">13:35</span></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">13:40</span></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif; background: lightgrey;">13:47</span></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">13:50</span></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif; background: lightgrey;">13:56</span></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">14:00</span></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif; background: lightgrey;">14:10</span></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">14:16</span></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif; background: lightgrey;">14:21</span></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">14:25</span></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif; background: lightgrey;">14:29</span></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">14:32</span></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif; background: lightgrey;">14:35</span></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">14:38</span></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif; background: lightgrey;">14:38</span></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">14:47</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="margin-bottom: 0cm; line-height: normal;"><strong><span style="text-decoration: underline;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">DOWOZY - p. M. Niewiński</span></span></strong></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">Wyszki – godz. 6:30</span></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">Pulsze– godz. 6:33</span></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">Warpechy Stare </span><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">– godz. 6:38</span></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">Mieszuki – godz. 6:42</span></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">Stacewicze– godz. 6:50</span></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">Warpechy Nowe– godz. 6:52</span></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">Mulawicze – godz. 7:00</span></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">Łapcie – godz. 7:05</span></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">Strabla – godz. 7:20</span></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">Samułki Duże – godz. 7:27</span></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">Samułki Małe – godz. 7:30</span></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">Filipy – godz. 7:35</span></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">Łuczaje – godz. 7:38</span></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">Kowale – godz. 7:40</span></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">Zdrojki/Falki</span><span style="font-size: 12pt; font-family: 'Times New Roman', serif;"> – godz. 7:47</span></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">Koćmiery</span><span style="font-size: 12pt; font-family: 'Times New Roman', serif;"> – godz. 7:50 </span></p>
+</div>
+<p><span style="font-size: 10pt; font-family: Georgia, serif;"><br clear="all"> </span></p>
+<div class="WordSection5">�</div>
+<p><strong><span style="text-decoration: underline;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;"><br clear="all"> </span></span></strong></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><strong><span style="text-decoration: underline;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">ODWOZY – p. M. Niewiński</span></span></strong></p>
+<table border="0" style="border-collapse: collapse; width: 594px;" cellspacing="0" cellpadding="0">
+<tbody>
+<tr style="height: 13.3pt;">
+<td rowspan="2" style="width: 99.25pt; border: 2.25pt solid windowtext; padding: 0cm 3.5pt; height: 13.3pt;" valign="top" width="132">�</td>
+<td colspan="2" style="width: 169.45pt; border-top: 2.25pt solid windowtext; border-right: 2.25pt solid windowtext; border-bottom: 2.25pt solid windowtext; border-left: none; padding: 0cm; height: 13.3pt;" valign="top" width="226"><strong><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">Poniedziałek Wtorek/Środa/Czwartek</span></strong></td>
+<td colspan="2" style="width: 177.15pt; border-top: 2.25pt solid windowtext; border-right: 2.25pt solid windowtext; border-bottom: 2.25pt solid windowtext; border-left: none; padding: 0cm 3.5pt; height: 13.3pt;" valign="top" width="236"><strong><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">Piątek</span></strong></td>
+</tr>
+<tr style="height: 15.75pt;">
+<td style="width: 84.4pt; border-top: none; border-left: none; border-bottom: 2.25pt solid windowtext; border-right: 2.25pt solid windowtext; padding: 0cm; height: 15.75pt;" width="113"><strong><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">I kurs</span></strong></td>
+<td style="width: 3cm; border-top: none; border-left: none; border-bottom: 2.25pt solid windowtext; border-right: 2.25pt solid windowtext; padding: 0cm; height: 15.75pt;" width="113"><strong><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">II kurs</span></strong></td>
+<td style="width: 92.1pt; border-top: none; border-left: none; border-bottom: 2.25pt solid windowtext; border-right: 2.25pt solid windowtext; padding: 0cm 3.5pt; height: 15.75pt;" valign="top" width="123"><strong><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">I kurs</span></strong></td>
+<td style="width: 3cm; border-top: none; border-left: none; border-bottom: 2.25pt solid windowtext; border-right: 2.25pt solid windowtext; padding: 0cm 3.5pt; height: 15.75pt;" valign="top" width="113"><strong><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">II kurs</span></strong></td>
+</tr>
+<tr style="height: 205.25pt;">
+<td style="width: 99.25pt; border-right: 2.25pt solid windowtext; border-bottom: 2.25pt solid windowtext; border-left: 2.25pt solid windowtext; border-top: none; padding: 0cm 3.5pt; height: 205.25pt;" valign="top" width="132">
+<p style="margin-bottom: 0cm; line-height: normal; background: #e7e6e6;"><strong><span style="font-size: 12pt; font-family: 'Times New Roman', serif; color: black;">Wyszki</span></strong></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><strong><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">Pulsze</span></strong></p>
+<p style="margin-bottom: 0cm; line-height: normal; background: #e7e6e6;"><strong><span style="font-size: 12pt; font-family: 'Times New Roman', serif; color: black;">Warpechy Stare</span></strong></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><strong><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">Mieszuki</span></strong></p>
+<p style="margin-bottom: 0cm; line-height: normal; background: #e7e6e6;"><strong><span style="font-size: 12pt; font-family: 'Times New Roman', serif; color: black;">Stacewicze</span></strong></p>
+<p style="margin-bottom: 0cm; line-height: normal; background: white;"><strong><span style="font-size: 12pt; font-family: 'Times New Roman', serif; color: black;">Warpechy Nowe</span></strong></p>
+<p style="margin-bottom: 0cm; line-height: normal; background: #e7e6e6;"><strong><span style="font-size: 12pt; font-family: 'Times New Roman', serif; color: black;">Mulawicze</span></strong></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><strong><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">Łapcie</span></strong></p>
+<p style="margin-bottom: 0cm; line-height: normal; background: #e7e6e6;"><strong><span style="font-size: 10pt; font-family: Georgia, serif; color: black;">Strabla</span></strong></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><strong><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">Samułki Małe</span></strong></p>
+<p style="margin-bottom: 0cm; line-height: normal; background: #e7e6e6;"><strong><span style="font-size: 12pt; font-family: 'Times New Roman', serif; color: black;">Samułki Duże</span></strong></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><strong><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">Filipy</span></strong></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><strong><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">Łuczaje</span></strong></p>
+<p style="margin-bottom: 0cm; line-height: normal; background: #e7e6e6;"><strong><span style="font-size: 12pt; font-family: 'Times New Roman', serif; color: black;">Kowale</span></strong></p>
+<p style="margin-bottom: 0cm; line-height: normal; background: #e7e6e6;"><strong><span style="font-size: 12pt; font-family: 'Times New Roman', serif; color: black;">Zdrojki/Falki</span></strong></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><strong><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">Koćmiery</span></strong></p>
+</td>
+<td style="width: 84.4pt; border-top: none; border-left: none; border-bottom: 2.25pt solid windowtext; border-right: 2.25pt solid windowtext; padding: 0cm; height: 205.25pt;" valign="top" width="113">
+<p style="margin-bottom: 0cm; line-height: normal; background: #e7e6e6;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif; color: black;">12:40</span></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">12:43</span></p>
+<p style="margin-bottom: 0cm; line-height: normal; background: #e7e6e6;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif; color: black;">12:47</span></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">12:52</span></p>
+<p style="margin-bottom: 0cm; line-height: normal; background: #e7e6e6;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif; color: black;">12:57</span></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">13:00</span></p>
+<p style="margin-bottom: 0cm; line-height: normal; background: #e7e6e6;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif; color: black;">13:05</span></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">13:09</span></p>
+<p style="margin-bottom: 0cm; line-height: normal; background: #e7e6e6;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif; color: black;">13:19</span></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">13:27</span></p>
+<p style="margin-bottom: 0cm; line-height: normal; background: #e7e6e6;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif; color: black;">13:29</span></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">13:31</span></p>
+<p style="margin-bottom: 0cm; line-height: normal; background: #e7e6e6;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif; color: black;">13:35</span></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">13:37</span></p>
+<p style="margin-bottom: 0cm; line-height: normal; background: #e7e6e6;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif; color: black;">13:40</span></p>
+<p><span style="font-size: 12pt; line-height: 107%; font-family: 'Times New Roman', serif;">13:43</span></p>
+</td>
+<td style="width: 3cm; border-top: none; border-left: none; border-bottom: 2.25pt solid windowtext; border-right: 2.25pt solid windowtext; padding: 0cm; height: 205.25pt;" valign="top" width="113">
+<p style="margin-bottom: 0cm; line-height: normal; background: #e7e6e6;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif; color: black;">15:20</span></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">15:23</span></p>
+<p style="margin-bottom: 0cm; line-height: normal; background: #e7e6e6;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif; color: black;">15:27</span></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">15:32</span></p>
+<p style="margin-bottom: 0cm; line-height: normal; background: #e7e6e6;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif; color: black;">15:37</span></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">15:40</span></p>
+<p style="margin-bottom: 0cm; line-height: normal; background: #e7e6e6;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif; color: black;">15:44</span></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">15:49</span></p>
+<p style="margin-bottom: 0cm; line-height: normal; background: #e7e6e6;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif; color: black;">15:59</span></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">16:07</span></p>
+<p style="margin-bottom: 0cm; line-height: normal; background: #e7e6e6;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif; color: black;">16:08</span></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">16:10</span></p>
+<p style="margin-bottom: 0cm; line-height: normal; background: #e7e6e6;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif; color: black;">16:14</span></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">16:16</span></p>
+<p style="margin-bottom: 0cm; line-height: normal; background: #e7e6e6;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif; color: black;">16:19</span></p>
+<p><span style="font-size: 12pt; line-height: 107%; font-family: 'Times New Roman', serif;">16:22</span></p>
+</td>
+<td style="width: 92.1pt; border-top: none; border-left: none; border-bottom: 2.25pt solid windowtext; border-right: 2.25pt solid windowtext; padding: 0cm 3.5pt; height: 205.25pt;" valign="top" width="123">
+<p style="margin-bottom: 0cm; line-height: normal; background: #e7e6e6;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif; color: black;">11:40</span></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">11:43</span></p>
+<p style="margin-bottom: 0cm; line-height: normal; background: #e7e6e6;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif; color: black;">11:47</span></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">11:52</span></p>
+<p style="margin-bottom: 0cm; line-height: normal; background: #e7e6e6;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif; color: black;">11:57</span></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">12:00</span></p>
+<p style="margin-bottom: 0cm; line-height: normal; background: #e7e6e6;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif; color: black;">12:04</span></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">12:09</span></p>
+<p style="margin-bottom: 0cm; line-height: normal; background: #e7e6e6;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif; color: black;">12:19</span></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">12:27</span></p>
+<p style="margin-bottom: 0cm; line-height: normal; background: #e7e6e6;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif; color: black;">12:29</span></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">12:31</span></p>
+<p style="margin-bottom: 0cm; line-height: normal; background: #e7e6e6;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif; color: black;">12:35</span></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">12:37</span></p>
+<p style="margin-bottom: 0cm; line-height: normal; background: #e7e6e6;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif; color: black;">12:40</span></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">12:43</span></p>
+</td>
+<td style="width: 3cm; border-top: none; border-left: none; border-bottom: 2.25pt solid windowtext; border-right: 2.25pt solid windowtext; padding: 0cm 3.5pt; height: 205.25pt;" valign="top" width="113">
+<p style="margin-bottom: 0cm; line-height: normal; background: #e7e6e6;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif; color: black;">13:35</span></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">13:38</span></p>
+<p style="margin-bottom: 0cm; line-height: normal; background: #e7e6e6;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif; color: black;">13:42</span></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">13:47</span></p>
+<p style="margin-bottom: 0cm; line-height: normal; background: #e7e6e6;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif; color: black;">13:52</span></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">13:55</span></p>
+<p style="margin-bottom: 0cm; line-height: normal; background: #e7e6e6;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif; color: black;">13:59</span></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">14:04</span></p>
+<p style="margin-bottom: 0cm; line-height: normal; background: #e7e6e6;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif; color: black;">14:14</span></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">14:24</span></p>
+<p style="margin-bottom: 0cm; line-height: normal; background: #e7e6e6;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif; color: black;">14:26</span></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">14:28</span></p>
+<p style="margin-bottom: 0cm; line-height: normal; background: #e7e6e6;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif; color: black;">14:32</span></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">14:34</span></p>
+<p style="margin-bottom: 0cm; line-height: normal; background: #e7e6e6;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif; color: black;">14:37</span></p>
+<p style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;">14:40</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+<div class="item-separator"></div>
+		</div>
+									<span class="row-separator"></span>
+				</div>
+
+				
+	
+			<div class="items-row cols-1 row-3">
+				<div class="item column-1">
+			
+	<h2>
+					<a href="/9-uncategorised/1502-obiady-luty-2026r.html">
+			Obiady - luty 2026r.</a>
+			</h2>
+
+	<ul class="actions">
+				<li class="print-icon">
+			<a href="/9-uncategorised/1502-obiady-luty-2026r.html?tmpl=component&print=1&page=" title="Drukuj" onclick="window.open(this.href,'win2','status=no,toolbar=no,scrollbars=yes,titlebar=no,menubar=no,resizable=yes,width=640,height=480,directories=no,location=no'); return false;" rel="nofollow"><img src="templates/allrounder-3/images/system/printButton.png" alt="Drukuj"></a>		</li>
+				
+			</ul>
+
+
+
+
+
+
+<p style="line-height: normal;"><strong><span style="font-size: 14pt;">Opłata za obiady za luty 2026 wynosi 200,00zł.</span></strong></p>
+<p style="line-height: normal;"><strong><span style="font-size: 14pt; color: red;">UWAGA krótki termin - </span></strong><strong><span style="font-size: 14pt;">Wpłaty za obiady prosimy dokonywać przelewem bankowym lub kartą w sekretariacie szkoły�<span style="color: red;">do 29.01.2026r. </span></span></strong></p>
+<p style="line-height: normal;"><strong><span style="font-size: 14pt;">Przypominamy, iż za datę wpłaty uznajemy wpływ środków pieniężnych na rachunek bankowy szkoły.</span></strong></p>
+<p style="margin-bottom: 0.0001pt; line-height: 17.15pt; background: white;"><strong><span style="font-size: 14pt;">Dane do przelewu:</span></strong></p>
+<p style="margin-bottom: 0.0001pt; line-height: 17.15pt; background: white;"><strong><span style="font-size: 14pt;">Szkoła Podstawowa im. Jana Pawła II w Wyszkach</span></strong></p>
+<p style="margin-bottom: 0.0001pt; line-height: 17.15pt; background: white;"><strong><span style="font-size: 14pt;">ul. Szkolna 17, 17-132 Wyszki</span></strong></p>
+<p style="margin-bottom: 0.0001pt; line-height: 17.15pt; background: white;"><strong><span style="font-size: 14pt;">Nr konta 84 80630001 0040 0400 1313 0002</span></strong></p>
+<p style="margin-bottom: 0.0001pt; line-height: 17.15pt; background: white;"><span style="font-size: 14pt;">W tytule przelewu należy podać:�<strong>opłata za obiady na miesiąc………….,</strong>�<strong>nazwisko i imię dziecka, klasa</strong></span></p>
+
+
+<div class="item-separator"></div>
+		</div>
+									<span class="row-separator"></span>
+				</div>
+
+				
+	
+			<div class="items-row cols-1 row-4">
+				<div class="item column-1">
+			
+	<h2>
+					<a href="/9-uncategorised/1499-obiady-styczeń-2026r.html">
+			OBIADY - styczeń 2026r.</a>
+			</h2>
+
+	<ul class="actions">
+				<li class="print-icon">
+			<a href="/9-uncategorised/1499-obiady-styczeń-2026r.html?tmpl=component&print=1&page=" title="Drukuj" onclick="window.open(this.href,'win2','status=no,toolbar=no,scrollbars=yes,titlebar=no,menubar=no,resizable=yes,width=640,height=480,directories=no,location=no'); return false;" rel="nofollow"><img src="templates/allrounder-3/images/system/printButton.png" alt="Drukuj"></a>		</li>
+				
+			</ul>
+
+
+
+
+
+
+<p style="line-height: normal;"><strong><span style="font-size: 14pt; color: red;">Dożywianie w szkole rozpoczynamy od 12.01.2026r. </span></strong></p>
+<p style="line-height: normal;"><strong><span style="font-size: 14pt;">Opłata za obiady za styczeń 2026 wynosi 50,00zł.</span></strong></p>
+<p style="line-height: normal;"><strong><span style="font-size: 14pt;">Wpłaty za obiady prosimy dokonywać przelewem bankowym lub kartą w sekretariacie szkoły�<span style="color: red;">do 07.01.2026r.</span></span></strong></p>
+<p style="line-height: normal;"><strong><span style="font-size: 14pt;">Przypominamy, iż za datę wpłaty uznajemy wpływ środków pieniężnych na rachunek bankowy szkoły.</span></strong></p>
+<p style="margin-bottom: 0cm; line-height: 17.15pt; background: white;"><strong><span style="font-size: 14pt; color: black;">Dane do przelewu:</span></strong></p>
+<p style="margin-bottom: 0cm; line-height: 17.15pt; background: white;"><strong><span style="font-size: 14pt; color: black;">Szkoła Podstawowa im. Jana Pawła II w Wyszkach</span></strong></p>
+<p style="margin-bottom: 0cm; line-height: 17.15pt; background: white;"><strong><span style="font-size: 14pt; color: black;">ul. Szkolna 17, 17-132 Wyszki</span></strong></p>
+<p style="margin-bottom: 0cm; line-height: 17.15pt; background: white;"><strong><span style="font-size: 14pt; color: black;">Nr konta 84 80630001 0040 0400 1313 0002</span></strong></p>
+<p style="margin-bottom: 0cm; line-height: 17.15pt; background: white;"><span style="font-size: 14pt; color: black;">W tytule przelewu należy podać:�<strong>opłata za obiady na miesiąc………….,</strong>�<strong>nazwisko i imię dziecka, klasa</strong></span></p>
+
+
+<div class="item-separator"></div>
+		</div>
+									<span class="row-separator"></span>
+				</div>
+
+				
+	
+			<div class="items-row cols-1 row-5">
+				<div class="item column-1">
+			
+	<h2>
+					<a href="/9-uncategorised/1498-święto-szkoły.html">
+			Święto Szkoły</a>
+			</h2>
+
+	<ul class="actions">
+				<li class="print-icon">
+			<a href="/9-uncategorised/1498-święto-szkoły.html?tmpl=component&print=1&page=" title="Drukuj" onclick="window.open(this.href,'win2','status=no,toolbar=no,scrollbars=yes,titlebar=no,menubar=no,resizable=yes,width=640,height=480,directories=no,location=no'); return false;" rel="nofollow"><img src="templates/allrounder-3/images/system/printButton.png" alt="Drukuj"></a>		</li>
+				
+			</ul>
+
+
+
+
+
+
+<p style="text-align: center;"><strong><span style="font-family: 'Times New Roman', serif;"><span style="font-size: 14pt;">Święto Szkoły – 34 rocznica nadania szkole imienia Jana Pawła II, VII Szkolny Konkurs Wiedzy o Patronie „Karol, który został świętym”.</span><br style="clear: right;"></span></strong></p>
+<p style="text-align: justify;"><span style="font-size: 12pt;"><span style="font-family: 'Times New Roman', serif;">������ 24 listopada nasza szkoła obchodziła 34 rocznicę nadania imienia Jana Pawła II. Jest to jedno z ważniejszych wydarzeń w kalendarzu uroczystości szkolnych, a jego celem jest przypomnienie postaci naszego patrona oraz jego wartości, które od lat towarzyszą społeczności szkolnej.</span>�</span></p>
+
+			<p class="readmore">
+				<a href="/9-uncategorised/1498-święto-szkoły.html">
+					Czytaj więcej: Święto Szkoły</a>
+		</p>
+
+
+<div class="item-separator"></div>
+		</div>
+									<span class="row-separator"></span>
+				</div>
+
+				
+	
+			<div class="items-row cols-1 row-6">
+				<div class="item column-1">
+			
+	<h2>
+					<a href="/9-uncategorised/1497-obiady-grudzień-2025r.html">
+			Obiady - grudzień 2025r.</a>
+			</h2>
+
+	<ul class="actions">
+				<li class="print-icon">
+			<a href="/9-uncategorised/1497-obiady-grudzień-2025r.html?tmpl=component&print=1&page=" title="Drukuj" onclick="window.open(this.href,'win2','status=no,toolbar=no,scrollbars=yes,titlebar=no,menubar=no,resizable=yes,width=640,height=480,directories=no,location=no'); return false;" rel="nofollow"><img src="templates/allrounder-3/images/system/printButton.png" alt="Drukuj"></a>		</li>
+				
+			</ul>
+
+
+
+
+
+
+<p style="line-height: normal;"><strong><span style="font-size: 14pt;">Opłata za obiady za grudzień 2025 wynosi 140,00zł.</span></strong></p>
+<p style="line-height: normal;"><strong><span style="font-size: 14pt;">Radzice uczniów klas I-III jadących na wycieczkę w dniu 16.12.2025r. wpłacają 10zł mniej. </span></strong></p>
+<p style="line-height: normal;"><strong><span style="font-size: 14pt;">Wpłaty za obiady prosimy dokonywać przelewem bankowym lub kartą� w sekretariacie szkoły�<span style="color: red;">do 26.11.2025r.</span></span></strong></p>
+<p style="line-height: normal;"><strong><span style="font-size: 14pt;">Przypominamy, iż za datę wpłaty uznajemy wpływ środków pieniężnych na rachunek bankowy szkoły.</span></strong></p>
+<p style="margin-bottom: 0.0001pt; line-height: 17.15pt; background: white;"><strong><span style="font-size: 14pt;">Dane do przelewu:</span></strong></p>
+<p style="margin-bottom: 0.0001pt; line-height: 17.15pt; background: white;"><strong><span style="font-size: 14pt;">Szkoła Podstawowa im. Jana Pawła II w Wyszkach</span></strong></p>
+<p style="margin-bottom: 0.0001pt; line-height: 17.15pt; background: white;"><strong><span style="font-size: 14pt;">ul. Szkolna 17, 17-132 Wyszki</span></strong></p>
+<p style="margin-bottom: 0.0001pt; line-height: 17.15pt; background: white;"><strong><span style="font-size: 14pt;">Nr konta 84 80630001 0040 0400 1313 0002</span></strong></p>
+<p style="margin-bottom: 0.0001pt; line-height: 17.15pt; background: white;"><span style="font-size: 14pt;">W tytule przelewu należy podać:�<strong>opłata za obiady na miesiąc………….,</strong>�<strong>nazwisko i imię dziecka, klasa</strong></span></p>
+
+
+<div class="item-separator"></div>
+		</div>
+									<span class="row-separator"></span>
+				</div>
+
+				
+	<div class="items-more">
+	<h3>Więcej artykułów&</h3>
+
+<ol>
+	<li>
+		<a href="/9-uncategorised/1496-obiady-listopad-2025r.html">
+			Obiady - listopad 2025r.</a>
+	</li>
+	<li>
+		<a href="/9-uncategorised/1495-opłata-za-obiady-za-październik-2025.html">
+			Opłata za obiady za październik 2025 </a>
+	</li>
+	<li>
+		<a href="/9-uncategorised/1494-obiady-wrzesień-2025.html">
+			OBIADY - wrzesień 2025</a>
+	</li>
+	<li>
+		<a href="/9-uncategorised/1493-wyprawka-szkolna-do-klasy-i-2025-2026.html">
+			Wyprawka do klasy pierwszej na rok szkolny 2025/2026</a>
+	</li>
+	<li>
+		<a href="/homepage/1491-wyprawki-szkolne-przedszkolaków.html">
+			WYPRAWKI SZKOLNE ODZIAŁÓW PRZEDSZKOLNYCH - 2025/2026</a>
+	</li>
+</ol>
+	</div>
+
+	<div class="pagination">
+
+					<p class="counter">
+				Strona 1 z 127			</p>
+						<ul><li class="pagination-start"><span class="pagenav">start</span></li><li class="pagination-prev"><span class="pagenav">poprz.</span></li><li><span class="pagenav">1</span></li><li><a title="2" href="/?start=8" class="pagenav">2</a></li><li><a title="3" href="/?start=16" class="pagenav">3</a></li><li><a title="4" href="/?start=24" class="pagenav">4</a></li><li><a title="5" href="/?start=32" class="pagenav">5</a></li><li><a title="6" href="/?start=40" class="pagenav">6</a></li><li><a title="7" href="/?start=48" class="pagenav">7</a></li><li><a title="8" href="/?start=56" class="pagenav">8</a></li><li><a title="9" href="/?start=64" class="pagenav">9</a></li><li><a title="10" href="/?start=72" class="pagenav">10</a></li><li class="pagination-next"><a title="nast." href="/?start=8" class="pagenav">nast.</a></li><li class="pagination-end"><a title="koniec" href="/?start=1008" class="pagenav">koniec</a></li></ul>	</div>
+
+</div>
+
+				</div>
+				<div class="clr"></div>
+				<span class="shadow-left">�</span>
+				<span class="shadow-right">�</span>
+					
+		
+			</div>
+				
+			<div class="clr"></div>
+		</div>
+			
+	<div id="bottom45">
+					
+					<div id="bottom5">
+	           	<div class="module-outer">
+		<div class="module">
+			<div>
+				<div>
+					<div class="lvround-inner">
+												<div class="bannergroup">
+	Rodzice dzieci sześcioletnich mogą tu znaleźć ciekawe materiały
+	<div class="banneritem">
+																																																															<a href="/component/banners/click/20.html" target="_blank" title="ORE dla rodziców">
+							<img src="images/banners/ore_logo_edu_z_adresem.jpg" alt="ORE dla rodziców">
+						</a>
+																<div class="clr"></div>
+	</div>
+
+	<div class="bannerfooter">
+		Warto skorzystać, zapraszamy...	</div>
+</div>
+						<div class="clr"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="clr"></div>
+		<span class="shadow-left">�</span>
+		<span class="shadow-right">�</span>
+	</div>
+	
+			</div>
+					
+	</div>					
+		
+		
+		<div class="clr"></div>
+	</div>
+			<div id="foot_container" style="max-width:1180px;">
+					
+		
+		
+							
+	
+			
+			<div id="subfoot">
+								
+					<div class="copytext">� Zespół Szkół im. Jana Pawła II w Wyszkach</div>
+							</div>
+					
+	
+		<div class="clr"></div>
+			<div id="footer">
+				<div class="footer-inner">
+					<span class="feckl">�</span>
+					<span class="feckr">�</span>
+					<div id="scroll_up"> <a href="#" class="lv-tooltip" id="gotop" title="Scroll to top">���</a></div>
+										</div>
+				<div class="footer-bottom">
+									
+				  		<span id="date">sobota, 09, maj 2026</span>
+								  		<span id="copy"><a href="http://www.lernvid.com" title="Joomla Templates" target="_blank">Template designed by LernVid.com</a></span>
+				</div>
+			</div>		
+		<div class="clr"></div>
+	</div>	
+		
+<div id="panel_cookie" class="panel_cookie"><div class="tresc"><h4>Informacje o plikach cookie</h4><p>Ta strona używa plików Cookies. Dowiedz się więcej o celu ich używania i możliwości zmiany ustawień Cookies w przeglądarce. <a href="/ciasteczka.html">Czytaj więcej...</a></p></div><input type="button" id="ukryj" value="Zamknij" onclick="info_cookie();"></div>
+</body></html>
